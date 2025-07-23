@@ -1,11 +1,7 @@
 pipeline {
     agent any
 
-    environment {
-        AWS_REGION = 'us-east-1'
-        ECR_REPO = '076194731919.dkr.ecr.us-east-1.amazonaws.com/flask-app'
-        IMAGE_TAG = "latest"
-    }
+    
 
     stages {
         stage('Checkout') {
